@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ABVentures</title>
+  <title><%= yield :head %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
+  <div class="footer navbar-fixed-bottom" id='foot'>
+    <%= render 'layouts/footer' %>
+  </div>
 
 </body>
 </html>

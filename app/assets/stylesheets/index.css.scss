@@ -1,0 +1,55 @@
+// Place all the styles related to the Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+
+#foot {
+    height: 75px;
+    background-color: rgba(120, 120, 120, 0.7);
+}
+
+#logo {
+    margin-left: 00px;
+    margin-top: -30px;
+    position: fixed;
+}
+
+body {
+    background-color: transparent;
+}
+
+div.center.hero-unit {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgba(120, 120, 120, 0.7);
+    text-align: center;
+    color: white;
+
+    #center-logo {
+        margin-bottom: -25px;
+        margin-top: -25px;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+    a {
+        color: white;
+        &:hover {
+            color: lightblue;
+        }
+    }
+
+    #footnote {
+        float: right;
+
+        #akpsi {
+            margin-top: -18px;
+        }
+    }
+}
