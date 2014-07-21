@@ -1,0 +1,24 @@
+<% content_for :head do %>
+  αβ Ventures
+<% end %>
+<div class='center hero-unit'>
+    <%= link_to image_tag('abventures3.png', width: 500, length: 300, id: 'center-logo'), '/' %>
+    <h2>Fall 2014 Application</h2></br>
+
+    <div id='fields'>
+      <%= form_tag('/apply', method: 'get') do %>
+        <%= text_field_tag :firstname, nil, placeholder: 'First Name' %>
+        <%= text_field_tag :lastname, nil, placeholder: 'Last Name' %></br>
+        <%= password_field_tag :password, nil, placeholder: 'Application Password' %></br>
+        <%= password_field_tag :passphrase, nil, placeholder: 'Passphrase' %></br>
+        </br><%= submit_tag('Go To My Application', :id => 'submit-button') %>
+      <% end %>
+    </div>
+
+    <div id='errors'>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: name %>
+      <% end %>
+    </div>
+
+</div>

@@ -22,7 +22,7 @@ div.center.hero-unit {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     background-color: rgba(120, 120, 120, 0.7);
     text-align: center;
     color: white;
@@ -30,6 +30,22 @@ div.center.hero-unit {
     #center-logo {
         margin-bottom: -25px;
         margin-top: -25px;
+    }
+
+    h2 {
+        font-weight: lighter;
+        font-size: 40px;
+    }
+
+    #submit-button {
+        font-weight: lighter;
+        font-size: 20px;
+        border: blue;
+        cursor: default;
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
@@ -47,6 +63,8 @@ footer {
 
     #footnote {
         float: right;
+        font-weight: lighter;
+        font-size: 15px;
 
         #akpsi {
             margin-top: -18px;
