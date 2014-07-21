@@ -23,4 +23,9 @@ class ApplicationsController < ApplicationController
     end
   end
 
+  def submit
+    @app = Application.find_by(firstname: params[:firstname], lastname: params[:lastname])
+    
+  end
+
 end
