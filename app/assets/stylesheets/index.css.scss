@@ -23,7 +23,7 @@ div.center.hero-unit {
     margin-right: 150px;
     margin-top: 80px;
     margin-bottom: 150px;
-    background-color: rgba(120, 120, 120, 0.7);
+    background-color: rgba(120, 120, 120, 0.8);
     text-align: center;
     color: white;
 
@@ -35,6 +35,20 @@ div.center.hero-unit {
     h2 {
         font-weight: lighter;
         font-size: 40px;
+    }
+
+    h5 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    a {
+        font-weight: lighter;
+        font-size: 20px;
+        color: lightblue;
+        &:hover {
+            color: white;
+        }
     }
 
     #submit-button {

@@ -2,7 +2,7 @@ module ApplicationsHelper
 
   def question6(question, number)
     if question
-      lines = question.lines(',')
+      lines = question.split(',')
       return lines[number - 1]
     else
       return ''

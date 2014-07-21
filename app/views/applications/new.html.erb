@@ -2,7 +2,10 @@
   <%= "αβ Ventures | #{@app.firstname}'s Application'" %>
 <% end %>
 <div class='center hero-unit'>
+  When you are finished working on your application, simply save it using the button provided. You may come back to work on your application any time before the deadline. </br></br>
   <%= form_tag('/submit', method: 'post') do %>
+    <%= hidden_field_tag :firstname, @app.firstname %>
+    <%= hidden_field_tag :lastname, @app.lastname %>
 
     <h4>Question 1</h4>
     Why are you attracted to the startup sphere? (100 Words)</br></br>
@@ -48,7 +51,7 @@
     Is there anything else you would like to add? Pitch yourself.</br></br>
     <%= text_area_tag :q8, @app.q8, placeholder: 'Question 8:', rows: 5, cols: 50 %></br></br>
 
-  <%= submit_tag("Submit my Application", id: 'submit-button') %>
+    <%= submit_tag("Save my Application", id: 'submit-button') %>
 
   <% end %>
 </div>
