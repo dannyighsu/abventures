@@ -65,19 +65,18 @@ div.center.hero-unit {
 
 #footer {
     padding: 0px;
-}
-
-footer {
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
-
     a {
         color: white;
         &:hover {
             color: lightblue;
         }
     }
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
 
     #footnote {
         float: right;
