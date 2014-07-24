@@ -20,36 +20,32 @@
     <%= text_area_tag :q3, @app.q3, placeholder: 'Question 3:', rows: 10, cols: 50 %></br></br>
 
     <h4>Question 4</h4>
-    In the startup world, ideas are likely to fail several times before succeeding. Give an example of a time you failed and describe how you handled the situation. (150 words)</br></br>
-    <%= text_area_tag :q4, @app.q4, placeholder: 'Question 4:', rows: 5, cols: 50 %></br></br>
+    Are there any ideas you would like to work on, or people you would like to work with?</br></br>
+    <%= text_area_tag :q5, @app.q5, placeholder: 'Question 4:', rows: 5, cols: 50 %></br></br>
 
     <h4>Question 5</h4>
-    Are there any ideas you would like to work on, or people you would like to work with?</br></br>
-    <%= text_area_tag :q5, @app.q5, placeholder: 'Question 5:', rows: 5, cols: 50 %></br></br>
-
-    <h4>Question 6</h4>
     Please fill out your approximate time commitments for the Fall 2014 semester in the following format: "[Activity]: [Hours/Week]".</br></br>
     <%= text_field_tag :q6_1, question6(@app.q6, 1), placeholder: 'Commitment 1' %></br>
     <%= text_field_tag :q6_2, question6(@app.q6, 2), placeholder: 'Commitment 2' %></br>
     <%= text_field_tag :q6_3, question6(@app.q6, 3), placeholder: 'Commitment 3' %></br>
     <%= text_field_tag :q6_4, question6(@app.q6, 4), placeholder: 'Commitment 4' %></br></br>
 
-    <h4>Question 7 (50 Words Each)</h4>
+    <h4>Question 6 (50 Words Each)</h4>
     <b>Part 1:</b> You are working with a team with no defined leader. One of your teammates steps up to take the reins, but you believe that they are guiding the team in the wrong direction. How do you handle the situation?</br></br>
-    <%= text_area_tag :q7_1, @app.q7a, placeholder: 'Question 7P1:', rows: 3, cols: 50 %></br></br>
+    <%= text_area_tag :q7_1, @app.q7a, placeholder: 'Question 6P1:', rows: 3, cols: 50 %></br></br>
 
     <b>Part 2:</b> One of your team members is contributing significantly less to team efforts than the rest are, and morale is running low as a result. How do you motivate this individual without running the risk of alienating them from the project?</br></br>
-    <%= text_area_tag :q7_2, @app.q7b, placeholder: 'Question 7P2:', rows: 3, cols: 50 %></br></br>
+    <%= text_area_tag :q7_2, @app.q7b, placeholder: 'Question 6P2:', rows: 3, cols: 50 %></br></br>
 
     <b>Part 3:</b> Describe the quality that you believe is most important to an entrepreneur.</br></br>
-    <%= text_area_tag :q7_3, @app.q7c, placeholder: 'Question 7P3:', rows: 3, cols: 50 %></br></br>
+    <%= text_area_tag :q7_3, @app.q7c, placeholder: 'Question 6P3:', rows: 3, cols: 50 %></br></br>
 
     <b>Part 4:</b> (For Engineers): Describe any applicable technologies/languages that you are familiar with, as well as your experience with each.</br></br>
-    <%= text_area_tag :q7_4, @app.q7d, placeholder: 'Question 7P4:', rows: 5, cols: 50 %></br></br>
+    <%= text_area_tag :q7_4, @app.q7d, placeholder: 'Question 6P4:', rows: 5, cols: 50 %></br></br>
 
-    <h4>Question 8</h4>
+    <h4>Question 7</h4>
     Is there anything else you would like to add? Pitch yourself.</br></br>
-    <%= text_area_tag :q8, @app.q8, placeholder: 'Question 8:', rows: 5, cols: 50 %></br></br>
+    <%= text_area_tag :q8, @app.q8, placeholder: 'Question 7:', rows: 5, cols: 50 %></br></br>
 
     <%= submit_tag("Save my Application", id: 'submit-button') %>
 
